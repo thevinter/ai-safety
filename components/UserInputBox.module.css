@@ -1,0 +1,17 @@
+.choice {
+  font-size: 30px;
+  color: #6272a4;
+}
+
+.choice:hover {
+  text-decoration: underline;
+}
+
+.extraChoice {
+  font-size: 30px;
+  color: #ff79c6;
+}
+
+.extraChoice:hover {
+  text-decoration: underline;
+}
