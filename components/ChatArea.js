@@ -86,9 +86,9 @@ const dialogue = {
   ],
 };
 
-export default function ChatArea() {
+export default function ChatArea({ conversation }) {
   const [currentElementId, setCurrentElementId] = useState(0);
-  const currentElement = dialogue.messages.filter(
+  const currentElement = conversation.messages.filter(
     (element) => element.id === currentElementId
   )[0];
   console.log(currentElement.messages);
