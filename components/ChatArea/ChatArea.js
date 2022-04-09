@@ -1,6 +1,6 @@
 import { useState } from "react";
-import AnswerBox from "./AnswerBox";
-import UserInputBox from "./UserInputBox";
+import AnswerBox from "./AnswerBox/AnswerBox";
+import UserInputBox from "./UserInputBox/UserInputBox";
 
 export default function ChatArea({ conversation }) {
   const [currentElementId, setCurrentElementId] = useState(0);
