@@ -1,0 +1,8 @@
+@use "~@fontsource/raleway/scss/mixins" as Raleway;
+
+@include Raleway.fontFace(
+        $fontName: "Raleway",
+        $weight: 500
+);
+
+//@import "~bootstrap/scss/bootstrap";
