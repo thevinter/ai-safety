@@ -5,12 +5,14 @@ export default function UserInputBox({
   link,
   setCurrentElementId,
   currentElementId,
+  previousElementId,
+  setPreviousElementId,
 }) {
   const choicesToShow = currentChoices.map((choice, i) => (
     <div
       className={styles.choice}
       key={i}
-      onClick={() => setCurrentElementId(choice.next)}
+      onClick={() => {setPreviousElementId(currentElementId); setCurrentElementId(choice.next)}}
     >
       {i}. {choice.text}
     </div>
@@ -29,7 +31,7 @@ export default function UserInputBox({
             </div>
             <div
               className={styles.extraChoice}
-              onClick={() => setCurrentElementId((i) => i - 1)}
+              onClick={() => setCurrentElementId(previousElementId)}
             >
               Wait, go back to the previous one
             </div>
