@@ -1,0 +1,128 @@
+{
+  "id": "start",
+  "messages": [
+    {
+      "id": 0,
+      "messages": [
+        "Why would Artificial Intelligence kill us all?",
+        "We're a bunch of nerds who have thought about the future of AI a lot. We have concluded that future AI systems, far smarter and more powerful than what exists today, are quite likely to destroy humanity.",
+        "We know that sounds weird. You probably disagree. Click on why you disagree and see if we know something you don't."
+      ],
+      "choices": [
+        {
+          "text": "Artificial Intelligence as smart as humans is impossible because…",
+          "next": "impossible"
+        },
+        {
+          "text": "If an AI does bad things, we just turn it off.",
+          "next": "turnoff"
+        },
+        {
+          "text": "Someone will take care of it if it becomes a problem.",
+          "next": "protector"
+        },
+        {
+          "text": "This is too far in the future to worry about.",
+          "next": "toofar"
+        },
+        {
+          "text": "Very smart Artifical Intelligence systems will not be dangerous.",
+          "next": "notdangerous"
+        }
+      ]
+    },
+    {
+      "id": "impossible",
+      "messages": [
+        "You think it is impossible for Artificial Intelligence to become as smart as humans. Obviously they are already much smarter than humans in some areas such as calculation and searching through large amounts of data. So there has to be some other part of intelligence that you think they can never do.",
+        "What do you think we can do that computers can never do?"
+      ],
+      "choices": [
+        {
+          "text": "Computers can't innovate",
+          "next": "impossibleinnovate"
+        },
+        {
+          "text": "Computers can't be creative",
+          "next": "impossiblecreative"
+        },
+        {
+          "text": "Computers can't grow in capability",
+          "next": "impossiblegrow"
+        }
+      ]
+    },
+    {
+      "id": "turnoff",
+      "messages": [
+        "You think if an AI does bad things we can just turn it off. We think this is much harder than you think. The reasons differ depending on how you want to do it.",
+        "How do you think turning off an AI that does a bad thing should work in practice?"
+      ],
+      "choices": [
+        {
+          "text": "We can build them with a shutdown mechanism.",
+          "next": "turnoffbutton"
+        },
+        {
+          "text": "We can just pull the plug.",
+          "next": "turnoffplug"
+        }
+      ]
+    },
+    {
+      "id": "protector",
+      "messages": [
+        "You think someone will take care of danger arises from powerful Artificial Intelligence systems, someone will take care of it.",
+        "Who do you think will take care of it?"
+      ],
+      "choices": [
+        {
+          "text": "Government",
+          "next": "protectorgovernment"
+        },
+        {
+          "text": "Tech companies",
+          "next": "protectorcompanies"
+        }
+      ]
+    },
+    {
+      "id": "toofar",
+      "messages": [
+        "You think very powerful Artificial Intelligence systems are too far into the future to worry about.",
+        "How far away do you think they are?"
+      ],
+      "choices": [
+        {
+          "text": "At least 10 years",
+          "next": "toofar10"
+        },
+        {
+          "text": "At least 100 years",
+          "next": "toofar100"
+        },
+        {
+          "text": "At least 1000 years",
+          "next": "toofar1000"
+        }
+      ]
+    },
+    {
+      "id": "notdangerous",
+      "messages": [
+        "You think very smart Artifical Intelligence systems will not be dangerous to us.",
+        "Why do you think that?"
+      ],
+      "choices": [
+        {
+          "text": "They will only do what we programmed them to do, and they'll be programmed to do things that are not dangerous.",
+          "next": "notdangerousprogrammed"
+        },
+        {
+          "text": "Smart people are nice, so smart machines will also be nice.",
+          "next": "notdangeroussmartisnice"
+        }
+      ]
+    }
+  ]
+}

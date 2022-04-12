@@ -3,11 +3,11 @@ import AnswerBox from "./AnswerBox/AnswerBox";
 import UserInputBox from "./UserInputBox/UserInputBox";
 
 export default function ChatArea({ conversation }) {
-  const [currentElementId, setCurrentElementId] = useState(0);
+  const [currentElementId, setCurrentElementId] = useState("0");
+  const [previousElementId, setPreviousElementId] = useState("0")
   const currentElement = conversation.messages.filter(
-    (element) => element.id === currentElementId
+    (element) => element.id == currentElementId
   )[0];
-  console.log(currentElement.messages);
   return (
     <div>
       <AnswerBox currentMessages={currentElement.messages} />
@@ -16,6 +16,8 @@ export default function ChatArea({ conversation }) {
         currentElementId={currentElementId}
         link={currentElement.link}
         currentChoices={currentElement.choices}
+        previousElementId={previousElementId}
+        setPreviousElementId={setPreviousElementId}
       />
     </div>
   );
