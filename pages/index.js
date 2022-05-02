@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import ChatArea from "../components/ChatArea/ChatArea";
+import { getAnswer } from "../services/apiService";
 import styles from "../styles/Home.module.css";
+import { useEffect } from "react";
 
 const dialogue = {
   id: 0,
@@ -88,6 +90,10 @@ const dialogue = {
 };
 
 export default function Home() {
+  useEffect(() => {
+    getAnswer("Can_you_give_an_AI_a_goal_of_“minimally_impact_the_world”%3F");
+  }, []);
+
   return (
     <div style={{ backgroundColor: "#282a36" }} className={styles.container}>
       <Head>
